@@ -20,6 +20,17 @@ html{
 section{
     padding: 2rem 9%;
 }
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255, 51, 153, .05);
+}
+.heading span{
+    color: var(--pink);
+}
 .btn{
     display: inline-block;
     margin: 1rem;
@@ -120,10 +131,54 @@ header .fa-bars{
     line-height: 1.5;
 }
 
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
 
+.about .row .video-container{
+    flex: 1 1 40rem;
+    position: relative;
+}
+.about .row .video-container iframe{
+    border: 1.5rem solid #fff;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+    object-fit: cover;
+    width: 100% !important;
+    height: 529 !important;
+}
+.about .row .video-container h3{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    background: #fff;
+    width: 97%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
 
+.about .row .content{
+    flex: 1 1 30rem;
+    margin-left: 5rem;
 
-
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color: #333;
+}
+.about .row .content p{
+    font-size: 1.5rem;
+    color: #9999;
+    padding: .5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
 
 
 
@@ -185,6 +240,9 @@ header .fa-bars{
 @media (max-width:450px) {
     html{
         font-size: 50%;
+    }
+    .heading{
+        font-size: 3rem;
     }
     
 }
